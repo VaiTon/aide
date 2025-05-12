@@ -1,0 +1,113 @@
+# AIDE (Advanced Intrusion Detection Environment)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+#
+
+option(
+    'audit',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include audit library support',
+)
+option(
+    'capabilities',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include capability library support',
+)
+option(
+    'curl',
+    type: 'feature',
+    value: 'disabled',
+    description: 'Include curl library support',
+)
+option(
+    'e2fsattrs',
+    type: 'feature',
+    value: 'disabled',
+    description: 'Include e2fs attributes support',
+)
+
+option(
+    'gcrypt',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include gcrypt library support',
+)
+option(
+    'nettle',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include nettle library support',
+)
+option(
+    'posix_acl',
+    type: 'feature',
+    value: 'disabled',
+    description: 'Include POSIX ACL library support',
+)
+option(
+    'selinux',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include selinux library support',
+)
+option(
+    'xattr',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include extended attributes support',
+)
+option(
+    'zlib',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include zlib compression support',
+)
+option(
+    'check',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include check unit testing framework',
+)
+option(
+    'fstype',
+    type: 'feature',
+    value: 'auto',
+    description: 'Include fstype support',
+)
+
+option('syslog_ident', type: 'string', value: 'aide', description: 'syslog ident')
+
+option(
+    'syslog_logopt',
+    type: 'string',
+    value: 'LOG_CONS',
+    description: 'syslog logopt',
+)
+
+option(
+    'syslog_priority',
+    type: 'string',
+    value: 'LOG_NOTICE',
+    description: 'syslog priority',
+)
+
+option(
+    'syslog_facility',
+    type: 'string',
+    value: 'LOG_LOCAL0',
+    description: 'default syslog facility',
+)
